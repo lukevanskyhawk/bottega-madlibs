@@ -1,11 +1,10 @@
 import React from 'react';
 
-import Input from '/.input'
-
-const Input = () => {
+const Input = (title) => {
     return (
         <div className="input">
-            {Input()}
+            <input />
+            <label>{title}</label>
         </div>
     )
 }
