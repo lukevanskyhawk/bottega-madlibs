@@ -1,4 +1,6 @@
 .home {
+    position: relative;
+
     background-color: rgba(207, 207, 207, 00.06);
     display: grid;
     
@@ -8,6 +10,32 @@
 
 .header {
     align-self: center;
+
+    &__skew {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 50%);
+        z-index: -10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        background-color: #444444;
+        
+    }
+
+    &__border {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 26%, 0 50%);
+        clip-path: polygon(0 0, 100% 0%, 100% 26%, 0 50%);
+        z-index: -11;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 120vh;
+        width: 100vw;
+        background-color: #00CB79;
+
+    }
 }
 .card {
     height: 736px;
